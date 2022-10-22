@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int t,x,y;
+	cin>>t;
+	while (t--)
+	{
+	cin >>x>>y;
+	int amt =0;
+	amt=x*y;
+	cout <<amt<<endl;
+	    
+	}
+	
+	return 0;
+}
