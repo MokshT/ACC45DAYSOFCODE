@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int cases, num, life, sum;
+	cin >> cases;
+	
+	for(int i=0; i<cases; i++){
+	    cin >> num >> life;
+	    sum = 0;
+	    int*n = new int[num-1];
+	    
+	    for(int i=0; i<num-1; i++){
+	        cin >> n[i];
+	        sum += n[i];
+	    }
+	    if(((num * life) - sum) < 0){
+	        cout << 0 << endl;
+	    }else{
+	        cout << ((num * life) - sum) << endl;
+	    }
+	    
+	}
+	return 0;
+}
