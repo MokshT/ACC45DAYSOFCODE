@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void linearSearch(int a[], int n, int x, int index)
+{
+    if (index >= n)
+    {
+        cout << "Not found" << endl;
+    }
+    else if (a[index] == x)
+    {
+        cout << "Found" << endl;
+    }
+    else
+    {
+        return linearSearch(a, n, x, index + 1);
+    }
+}
+int main()
+{
+    int a[10] = {1, 7, 3, 1, 4, 6, 2, 3, 5, 86}; // array
+    int x = 3;                                   // element to search
+    int n = 10;                                  // size of array
+    int index = 0;                               // index similar to i in loop
+    linearSearch(a, n, x, index);
+
+    return 0;
+}
