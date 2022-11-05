@@ -1,0 +1,77 @@
+#include<iostream>
+using namespace std;
+class Node{
+    public: int data;
+    Node *lptr, *ptr;
+    Node* rptr;
+
+};
+Node* LLT = new Node();
+int length(){
+    Node* temp;
+    temp = LLT;
+    int len = 0;
+    while(temp != NULL){
+    len++;
+    temp  = temp -> ptr;
+    }
+    return(len);
+}
+
+void display(){
+    Node* temp;
+    temp = LLT;
+    while(temp != NULL){
+        cout << temp->data << "in";
+        temp = temp -> ptr;
+    }
+}
+
+void append(){
+    Node* temp;
+    temp = new Node();
+    cout << "Enter the data" ;
+    cin >> temp -> data;
+    temp -> lptr = NULL;
+    temp -> rptr = NULL;
+    Node* p = LLT;
+    while(p -> ptr != NULL){
+        p = p -> ptr;
+    }
+    p -> ptr = temp;
+    temp -> lptr = p;
+}
+
+void insertBegin(){
+    Node* temp;
+    temp = new Node();
+    cout << "Enter the data: ";
+    cin >> temp -> data;
+    temp -> ptr = NULL;
+    if(LLT == NULL){
+        LLT = temp;
+    }
+    else{
+        temp -> ptr = LLT;
+        LLT = temp;
+    }
+}
+
+void insertAfter(){
+    int loc;
+    Node* p = LLT;
+    Node* q;
+    Node* temp = new Node();
+    temp -> data = 40;
+    temp -> lptr = NULL;
+    temp -> rptr = NULL;
+while(loc-1 > 1){
+    p = p -> rptr;
+    loc--;
+}
+    q = p -> rptr;
+    q -> lptr = temp;
+    temp -> rptr = q;
+    p -> rptr = temp;
+    temp -> lptr = p;
+}
