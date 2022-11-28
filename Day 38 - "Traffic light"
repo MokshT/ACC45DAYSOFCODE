@@ -1,0 +1,22 @@
+import random
+
+while True:
+    choices = ["Red", "Yellow", "Green"]
+    
+    computer = random.choice(choices)
+    
+    if computer == "Red":
+        print("Light color: Red")
+        print("You have to stop for 60 seconds!")
+        print("Wait for the light to turn green!")
+        break
+    elif computer == "Yellow":
+        print("Light color: Yellow")
+        print("Move slowly!")
+        print("Wait for the light to turn green!")
+        break
+    else:
+        print("Light color: Green")
+        print("You can go now!")
+        print("Have a safe journey!")
+        break
