@@ -1,0 +1,95 @@
+# Variables - memory working
+# Numbers, string, boolean, object.
+x = 5
+print(id(x))
+a = 4
+b = 4
+c = b
+a = 7
+b = 6
+print(id(a))
+print(id(b))
+print(id(c))
+print(id(4))
+print(id(b))
+print(end = '\n')
+
+# Constant
+pi = 3.14
+print(pi)
+print(end = '\n')
+
+print(type(a))
+type(a)          # -----????
+type(b)          # -----????
+type(pi)
+
+# %%
+# Data types - None, numeric, list, tuple, set, string, range, map
+# None - not assigned with any value
+# Numeric - int, float, complex, boolean
+# List 
+# Tuple 
+# Set
+# String 
+# Range 
+# Map
+
+# Numeric:
+num = 1
+print(type(num))
+num1 = 2.5
+print(type(num1))
+num2 = 6+9j
+print(type(num2))
+print(end = '\n')
+
+# Type conversion
+a = 5.5
+b = int(a)
+print(type(b))
+k = float(b)
+print(type(k))
+k = 5
+c = complex(b, k)
+print(type(c))
+print(end = '\n')
+
+# Boolean
+print(b < k)
+print(b > k)
+bool = b < k
+bool
+print(int(True))
+print(int(False))
+print(end = '\n')
+
+# List
+lst = [1, 2, 3, 3]
+print(type(lst))
+print(end = '\n')
+
+# Set
+s = {5, 6, 7, 8, 9}
+print(type(s))
+print(end = '\n')
+
+# Tuple
+t  = (23, 23, 34, 45, 45)
+print(type(t))
+print(end = '\n')
+
+# String
+str = "Asta"
+print(type(str))
+range(10)
+list (range(10))
+list(range(2, 11, 2))  # for printing even numbers
+print(end = '\n')
+
+# Mapping(or dictionaries)
+d = {1: 'Asta', 2: 'Anya', 3: 'Noelle'}
+print(d.keys())
+print(d.values())
+print(d[1])
+print(d[3])
