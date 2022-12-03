@@ -1,0 +1,104 @@
+# Binary digit for 13 = 00001101
+#1's complement of 13 = 11110010
+#2's complement of 13 = 11110010 + 1 = 11110011
+# Only positive numbers are stored in the system and negative numbers  are first converted into positive numbers and then they are saved as 1's complement
+# Bitwise OR(|)
+print(12 | 13) # 12 = 00001101, 13 = 00001101
+# Bitwise AND(&)
+print(12 & 13)
+# Bitwise XOR(^) - 0 0 = 0, 0 1 = 1, 1 1 = 1, 1 1 = 0
+print(12 ^ 13) 
+# 12 = 00001100
+# 13 = 00001101
+#Add = 00000001 so answer of 12 ^ 13 is 1
+
+# Leftshift - gaining bits
+print(10 << 2) # 10 = 1010, after shfting = 101000 which is 40
+# Rightshift - losing buts
+print(10 >> 2) # 10 = 1010, After shifting - 10 which is 2
+
+# %%
+# Octal(0 - 7) and Hexadecimal(0 9, a -f)
+print(bin(25)) # "0b" in output represents binary
+0b01010
+print(0b01010)
+print(oct(25))
+print(hex(25))
+print(hex(10))
+print(0xf)
+
+# Reasoning
+a,b = 15,12
+x = (a // 4 + b ** 3) < 2000 and (b % 4 != 0)
+print(x)
+
+# %%
+# Swapping values
+# 1st method
+a = 5
+b = 6
+a, b = b, a
+print(a)
+print(b)
+print(end = '\n')
+
+# 2nd method
+x = 4
+y = 3
+temp = x
+x = y
+y = temp
+print(x)
+print(y)
+print(end = '\n')
+
+# 3rd method
+p = 7
+q = 8
+p = p + q
+q = p - q
+p = p - q
+print(p)
+print(q)
+print(end = '\n')
+
+# 4th method
+r = 11
+s = 12
+r = r ^ s
+s = r ^ s
+r = r ^ s
+print(r)
+print(s)
+
+# %%
+# Mathematical functions
+# Sqaure root of a number
+import math 
+import math as m # By writing this we can use m instead of math in functions
+x = math.sqrt(25)
+print(x)
+
+# Rounding off digits
+print(math.floor(12.67)) # Rounds off the valus to minimum
+print(math.ceil(12.67))  # Rounds off the value to maximum
+
+# Squaring values
+z = 2 ** 3
+print(z)
+print(math.pow(2,3))
+
+# Constant value 
+print(math.pi)
+print(math.e)
+print(m.e)
+
+# Importing only certain functions
+from math import sqrt, pow
+print(pow(4,5))
+help('math') # For finding the name of functions
+
+# %%
+#  User input
+x = input("Enter a value: ");
+y = input("Enter a value: ");
