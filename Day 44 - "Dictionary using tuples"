@@ -1,0 +1,23 @@
+## Creating dictionary using tuples
+
+dict2 = dic([(1, "India") , (2, "China"), (3, "USA") , (4, "UK")])
+print(dict2)
+
+dict2[2] = "Nepal"
+print (dict2)
+
+dict2[3] = "US"
+print (dict2)
+
+dict2[5] = "World"
+print(dict2)
+
+dict2.keys()
+dict2.values()
+dict2.items()
+
+dict2.pop(3)
+print(dict2)
+
+d = {"Name" :'Abc' , "Age": 19 , "Gender" : 'Male' , "Semester" : 3 , "Year" : 2 , "Grade" : 'A+'}
+print(d)
